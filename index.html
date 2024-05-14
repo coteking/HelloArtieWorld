@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | webARTIE</title>
+    <title>Unity WebGL Player | IronPlanetStudios</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -42,7 +42,7 @@
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='Screenshot 2023-03-10 at 12.47.54 PM' src='targets/Screenshot 2023-03-10 at 12.47.54 PM.png'></imagetarget>
 		<imagetarget id='unnamed' src='targets/unnamed.png'></imagetarget>
-		
+		<imagetarget id='IMG_0826' src='targets/IMG_0826.jpg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -80,7 +80,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/88.loader.js"></script>
+    <script src="Build/artie.loader.js"></script>
     <script>
             var unityCanvas = document.querySelector("#unity-canvas");
             var videoCanvas = document.querySelector("#video-canvas");
@@ -106,12 +106,12 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/88.data.unityweb",
-                    frameworkUrl: "Build/88.framework.js.unityweb",
-                    codeUrl: "Build/88.wasm.unityweb",
+                    dataUrl: "Build/artie.data.unityweb",
+                    frameworkUrl: "Build/artie.framework.js.unityweb",
+                    codeUrl: "Build/artie.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "webARTIE",
+                    productName: "IronPlanetStudios",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
